@@ -9,7 +9,7 @@ function compareValues(sum, luckyNumber) {
   if (sum % luckyNumber === 0) {
     resultDisplay.style.display = "block";
     resultDisplay.innerText = "Woaahhhh!! You're Lucky 🤩";
-  } else {
+  } else if (sum % luckyNumber !== 0) {
     resultDisplay.innerText = "Oops! Not lucky!";
   }
 }
