@@ -4,7 +4,7 @@
 - Finds out if sum of digits of birthday is divisible by the lucky number.
 - Shows the result to user with some graphics.
 
-## Bomus-done
+## Bonus-done
 
-- Create this as a website, put a privacy notice. Which says we're not storing data.
+- Created this as a website, put a privacy notice. Which says we're not storing data.
 - Used the footer to redirect to my social media accounts and my portfolio.
