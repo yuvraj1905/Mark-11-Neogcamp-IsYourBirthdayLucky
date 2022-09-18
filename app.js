@@ -1,21 +1,24 @@
 const dateOfBirth = document.querySelector("#date-of-birth");
 const luckyNumber = document.querySelector("#lucky-number");
 const checkNumberBtn = document.querySelector("#check-number");
-const resultDisplay = document.querySelector("#txt-area");
+const resultDisplay = document.querySelector("#Output");
 const Privacy = document.querySelector(".Privacy");
 const Privacy_btn = document.querySelector(".Privacy_btn");
 
 function compareValues(sum, luckyNumber) {
   if (sum % luckyNumber === 0) {
-    resultDisplay.value = "Lucky";
-    resultDisplay.style.display = "block;";
+    resultDisplay.style.display = "block";
+    resultDisplay.innerText = "Woaahhhh!! You're Lucky 🤩";
   } else {
-    resultDisplay.value = "nnnhe";
+    resultDisplay.innerText = "Oops! Not lucky!";
   }
 }
 
 function checkBirthdayIsLucky() {
   const dob = dateOfBirth.value;
+  if (dob === "" || luckyNumber.value === "") {
+    alert("Please fill both fields");
+  }
   const sum = calSum(dob);
   compareValues(sum, luckyNumber.value);
 }
@@ -33,7 +36,7 @@ checkNumberBtn.addEventListener("click", checkBirthdayIsLucky);
 
 setTimeout(function () {
   Privacy.style.display = "block";
-}, 2000);
+}, 3000);
 
 Privacy_btn.addEventListener("click", () => {
   Privacy.style.display = "none";

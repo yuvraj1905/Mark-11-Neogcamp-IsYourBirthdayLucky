@@ -4,43 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      .Privacy {
-        /* background-color: blueviolet;
-         */
-        border: 1px solid;
-
-        display: none;
-        max-width: 200px;
-        margin: auto;
-        padding: 1rem;
-      }
-      .Privacy .Privacy_btn {
-        display: flex;
-        justify-content: center;
-        margin: auto;
-        display: block;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
   </head>
   <body>
     <h1>Is Your Birthday Lucky ?</h1>
-    <label for="date-of-birth">Date of birth</label>
-    <input type="date" id="date-of-birth" />
-    <label for="lucky-number">Lucky Number</label>
-    <input type="number" id="lucky-number" />
-    <button id="check-number">Check Number</button>
+    <div class="container">
+      <label for="date-of-birth" class="txt">Date of birth</label>
+      <input type="date" class="center" id="date-of-birth" />
+    </div>
 
+    <div class="container">
+      <label for="lucky-number" class="txt">Lucky Number</label>
+      <input type="number" class="center" id="lucky-number" />
+    </div>
+
+    <div class="container">
+      <button class="center" id="check-number">Check</button>
+    </div>
+    <div class="container">
+      <h3 id="Output">Output</h3>
+    </div>
+
+    <footer class="footer container">
+      <div class="footer-header">©️Yuvraj</div>
+      <ul class="social-links list-non-bullet">
+        <li class="list-item-inline">
+          <a class="link" href="https://github.com/yuvraj1905"> Github</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="https://www.instagram.com/yuvraj_1905/">
+            Instagram</a
+          >
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="https://www.linkedin.com/in/yuvrajkumar1905/">
+            LinkedIn</a
+          >
+        </li>
+      </ul>
+    </footer>
     <div class="Privacy">
       <h3 class="Privacy_Note">
-        What personal data we collect and how we collect it. We do not collect
-        any data whatsoever from the users. We use client side javascript for
-        all the calculations.
+        We do not collect any data whatsoever from the users. We use client side
+        javascript for all the calculations.
       </h3>
       <button class="Privacy_btn">close</button>
     </div>
-    <!-- <textarea name="textarea" id="txt-area" cols="30" rows="10"></textarea> -->
     <script src="app.js"></script>
   </body>
 </html>
