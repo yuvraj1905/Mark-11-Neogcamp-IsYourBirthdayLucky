@@ -21,6 +21,9 @@ function checkBirthdayIsLucky() {
   if (dob === "" || luckyNumber.value === "") {
     alert("Please fill both fields");
   }
+  if (luckyNumber.value < 0) {
+    alert("lucky number has to be a positive value");
+  }
   const sum = calSum(dob);
   compareValues(sum, luckyNumber.value);
 }
